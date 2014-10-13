@@ -1,0 +1,25 @@
+<div class="nature">
+
+  <img src="images/bunny_{{bunny.type}}.png" class="bunny" style="position: absolute; top:{{bunny.position.top}}px; left:{{bunny.position.left}}px;">
+  
+ 
+
+
+
+  <div class="controls">
+    <div class="info">
+      {{be}}
+    </div>
+    <input type="text" placeholder="control me" ng-model="be" placeholder="Click here and use the arrow keys to move" ng-keydown="move($event)"> 
+    
+    <div class="pull-right">
+      <input type="text" ng-model="amountMoved" />
+    </div>
+
+    <div class="pull-right">
+      <select ng-model="bunny.type">
+        <option ng-repeat="b in bunnyTypes">{{b}}</option>
+      </select>
+    </div>
+  </div>
+</div>

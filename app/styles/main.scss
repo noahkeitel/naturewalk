@@ -1,0 +1,56 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    min-width: 100%;
+    min-height: 100%;
+    background: #009900;
+}
+
+
+.nature {
+    position: relative;
+    background-image: url("../images/nature_bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+}
+.controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    .info {
+        display:inline;
+        width: 20%;
+        padding: 10px;
+        color: #fff;
+    }
+    input {
+        display: inline;
+        width: 56%;
+        text-align: center;
+    }
+}
+
+.bunny {
+    width: 100px;
+    position:absolute;
+}
